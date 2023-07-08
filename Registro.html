@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre su Cuenta</title>
+    <!--Agregando los estilos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!--Estilo Personalizado-->
+    <link rel="stylesheet" href="CSS/Estilo.css">
+    <!-- Cargando Jquery -->
+    <script src="Js/Librerias/jquery-3.7.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="row justify-content-md-center">
+            <!-- Formulario -->
+            <form class="col-6 Register px-5 py-4" id="formCreateAccount" action="Registro Recibido.html" method="post">
+                <h1>CREE SU CUENTA</h1>
+
+                <!-- Entrada de Nombre -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtName">Nombres:</label>
+                    <input class="form-control" type="text" name="Nombres" id="txtName">
+                    <small id="helpId" class="form-text text-muted">Escriba su nombre completo.</small>
+                </div>
+
+                <!-- Entrada de Apellido -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtApellido">Apellidos:</label>
+                    <input class="form-control" type="text" name="Apellidos" id="txtApellido">
+                    <small id="helpId" class="form-text text-muted">Escriba ambos apellidos.</small>
+                </div>
+
+                <!-- Entrada de DNI -->
+                <div class="mb-3">
+                    <label class="form-label" for="intDNI">DNI:</label>
+                    <input class="form-control" type="tel" name="DNI" id="intDNI">
+                </div>
+
+                <!-- Entrada de Correo -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtEmail">Correo Electrónico:</label>
+                    <input class="form-control" type="email" name="Email" id="txtEmail" placeholder="abc@mail.com">
+                    <small id="emailHelpId" class="form-text text-muted">Ingrese su correo institucional.</small>
+                </div>
+
+                <!-- Entrada de Fecha de Nacimiento -->
+                <div class="mb-3">
+                    <label for="inputNac" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" name="FecNac" id="inputNac" min="1960-12-31" max="2005-12-31">
+                    <small id="helpId" class="form-text text-muted">Ingrese día / mes / año</small>
+                </div>
+
+                
+                <!-- Entrada de Número de Teléfono/Celular -->
+                <div class="mb-3">
+                    <label class="form-label" for="intPhone">Teléfono/Celular:</label>
+                    <input class="form-control" type="tel" name="Celular" id="intPhone">
+                </div>
+
+                <!-- Entrada de Dirección -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtAddress1">Dirección:</label>
+                    <input class="form-control" type="text" name="Address1" id="txtAddress1">
+                    <input class="form-control" type="text" name="Address2" id="txtAddress2">
+                </div>
+
+                <!-- Entrada de Género -->
+                <div class="mb-3">
+                    <p class="form-label">Género:</p>
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="radio" class="btn-check" name="genero" id="inputMasculino" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="inputMasculino">Masculino</label>
+
+                        <input type="radio" class="btn-check" name="genero" id="inputFemenino" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="inputFemenino">Femenino</label>
+
+                        <input type="radio" class="btn-check" name="genero" id="inputOtro" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="inputOtro">Otro</label>
+                    </div>
+                </div>
+
+                <!-- Entrada de Usuario -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtUser">Usuario:</label>
+                    <input class="form-control" type="text" name="User" id="txtUser">
+                    <span id="apoyo" class="form-text" style="display: none;">El usuario tiene que ser de 4 a 16
+                        dígitos y puede contener números, letras y guión bajo. </span>
+                </div>
+
+                <!-- Entrada de Contraseña -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtContraseña">Contraseña:</label>
+                    <input class="form-control" type="password" name="Password" id="txtContraseña" placeholder="Contraseña1234@">
+                    <small id="helpId" class="form-text text-muted">La contraseña debe tener por lo menos una mayuscula y un @</small>
+                </div>
+
+                <!-- Entrada de Repetir Contraseña -->
+                <div class="mb-3">
+                    <label for="txtrepassword" class="form-label">Repetir Contraseña:</label>
+                    <input type="password" id="txtrepassword" name="repassword" class="form-control">
+                    <span id="apoyoInputPassword" class="form-text" style="display: none;">Ambas contraseñas deben ser iguales</span>
+                </div>
+
+                <!-- Entrada de Checkbox -->
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="bolAccept">
+                        <label class="form-check-label" style="display:inline-block" for="bolAccept">Acepta las <a
+                                href="#">condiciones</a> para crear una cuenta.</label>
+                    </div>
+
+                </div>
+
+                <!--Bontón de envio-->
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Registrar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+    <!--Cargando el archivo Javascript-->
+    <script src="Js/Personalización/main.js"></script>
+</body>
+
+</html>

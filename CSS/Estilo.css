@@ -1,0 +1,31 @@
+/* Estilo Principal*/
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.05em;
+    color: #1c1c1c;
+}
+
+/* Cuerpo de página */
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(Fondo/Fondo.jpg);
+    background-attachment: fixed;
+}
+
+/*Formulario*/
+.Register{
+    background: #ddc4c2;
+}
+
+#txtAddress1{
+    margin-bottom: 8px;
+}
+
+
+/* Estilo del Título */
+
+h1{
+    
+    color: #183672;
+}
